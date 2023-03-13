@@ -11,7 +11,7 @@ public class WhileLoopApp {
         // 2. process
         int count = 0;
         int sum = 0;
-        int prod = 0;
+        int prod = 1;
         while (num > 0) {
             int rem = num % 10;
             num /= 10;
@@ -19,9 +19,10 @@ public class WhileLoopApp {
             sum += rem;
             prod *= rem;
         }
+
         // 3. output
-        System.out.println(sum);
-        System.out.println(prod);
-        System.out.println(count);
+        System.out.printf("Sum of digits is: %d\n", sum);
+        System.out.printf("Prod of digits is: %d\n", prod);
+        System.out.printf("Count of digits is: %d\n", count);
     }
 }
