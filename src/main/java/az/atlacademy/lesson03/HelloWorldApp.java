@@ -6,5 +6,5 @@ package az.atlacademy.lesson03;
 //        System.out.print("Hello, World!");
 //        System.out.printf("Hello, %s", "World");
 //        System.out.printf("Hello, %s\n", "World");
-//    }
+//    }int
 //}
