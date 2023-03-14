@@ -15,7 +15,5 @@ public class NumberApp {
         } else {
             System.out.println("Error");
         }
-
-
     }
 }
