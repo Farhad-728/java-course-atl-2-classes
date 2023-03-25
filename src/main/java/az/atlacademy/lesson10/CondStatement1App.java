@@ -2,7 +2,7 @@ package az.atlacademy.lesson10;
 
 import java.util.Scanner;
 
-public class CondStatementApp {
+public class CondStatement1App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int x = scan.nextInt();
