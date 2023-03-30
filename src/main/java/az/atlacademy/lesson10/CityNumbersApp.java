@@ -7,7 +7,8 @@ public class CityNumbersApp {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int m = scan.nextInt();
-        if (n % 2 != 0) {
+        if ((n % 2 == 0 && m % 2 == 0)
+                || (n % 2 != 0 && m % 2 != 0)) {
             System.out.println(1);
         } else {
             System.out.println(0);

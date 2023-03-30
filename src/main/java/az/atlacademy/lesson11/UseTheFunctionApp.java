@@ -5,17 +5,15 @@ import java.util.Scanner;
 public class UseTheFunctionApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double[] arr = new double[3];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = scan.nextDouble();
-        }
-        double max = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            double cur = arr[i];
-            if (max < cur) {
-                max = cur;
-            }
-        }
-        System.out.println(max);
+        double x = scan.nextDouble();
+        double y = scan.nextDouble();
+        double z = scan.nextDouble();
+        // min(max(x, y), max(y, z), x + y + z);
+        double sum = x + y + z;
+        double maxYz = Math.max(y, z);
+        double maxXy = Math.max(x, y);
+        double min = Math.min(maxXy, maxYz);
+        double lastMin = Math.min(min, sum);
+        System.out.println(lastMin);
     }
 }

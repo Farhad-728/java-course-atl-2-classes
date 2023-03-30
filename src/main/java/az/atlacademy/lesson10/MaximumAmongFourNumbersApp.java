@@ -9,24 +9,10 @@ public class MaximumAmongFourNumbersApp {
         int b = scan.nextInt();
         int c = scan.nextInt();
         int d = scan.nextInt();
-        if (a > b) {
-            if (a > c) {
-                if (a > d) {
-                    System.out.println(a);
-                } else {
-                    System.out.println(d);
-                }
-            }
-        } else if (b > c) {
-            if (b > d) {
-                System.out.println(b);
-            } else {
-                System.out.println(d);
-            }
-        } else if (c > d) {
-            System.out.println(c);
-        } else {
-            System.out.println(d);
-        }
+
+        int max1 = a > b ? a : b;
+        int max2 = c > d ? c : d;
+        int max = max1 > max2 ? max1 : max2;
+        System.out.println(max);
     }
 }
