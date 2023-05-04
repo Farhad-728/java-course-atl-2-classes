@@ -1,4 +1,4 @@
-package az.atlacademy.PreExamGeneralMixedHomework;
+package az.atlacademy.lesson02.PreExamGeneralMixedHomework;
 
 import java.util.Scanner;
 

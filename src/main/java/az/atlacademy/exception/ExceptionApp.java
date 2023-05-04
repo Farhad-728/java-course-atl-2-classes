@@ -13,7 +13,7 @@ public class ExceptionApp {
         try {
             num1 = Integer.parseInt(word1);
             num2 = Integer.parseInt(word2);
-        } catch (NumberFormatException e) {
+        } catch (RuntimeException e) {
             System.out.println("Error");
         }
         System.out.print(num1 / num2);

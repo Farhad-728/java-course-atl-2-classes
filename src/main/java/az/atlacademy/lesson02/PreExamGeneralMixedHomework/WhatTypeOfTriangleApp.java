@@ -1,4 +1,4 @@
-package az.atlacademy.PreExamGeneralMixedHomework;
+package az.atlacademy.lesson02.PreExamGeneralMixedHomework;
 
 import java.util.Scanner;
 
@@ -10,7 +10,9 @@ public class WhatTypeOfTriangleApp {
         int side3 = scan.nextInt();
         if (side1 == side2 && side2 == side3 && side1 == side3) {
             System.out.println(1);
-        } else if (side1 == side2 && side2 != side3 && side1 != side3) {
+        } else if (side1 == side2 || side1 == side3) {
+            System.out.println(2);
+        } else if (side2 == side1 || side2 == side3) {
             System.out.println(2);
         } else {
             System.out.println(3);

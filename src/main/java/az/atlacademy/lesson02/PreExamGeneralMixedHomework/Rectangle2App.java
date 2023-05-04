@@ -1,14 +1,13 @@
-package az.atlacademy.PreExamGeneralMixedHomework;
+package az.atlacademy.lesson02.PreExamGeneralMixedHomework;
 
 import java.util.Scanner;
 
-public class Rectangle3App {
+public class Rectangle2App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        int m = scan.nextInt();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print("#");
             }
             System.out.println();
