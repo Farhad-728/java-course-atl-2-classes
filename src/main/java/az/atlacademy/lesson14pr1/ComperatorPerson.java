@@ -1,4 +1,4 @@
-package lesson13pr1;
+package az.atlacademy.lesson14pr1;
 
 import az.atlacademy.lesson14pr1.Person;
 
