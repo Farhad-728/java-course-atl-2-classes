@@ -9,13 +9,13 @@ public class ArrayListApp {
         ArrayList<Integer> nums = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             nums.add((int) (Math.random() * 100));
-            nums.sort(new Comparator<Integer>() {
-                @Override
-                public int compare(Integer integer, Integer t1) {
-                    return 0;
-                }
-            });
         }
+        nums.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer i1, Integer i2) {
+                return Integer.compare(i1, i2);
+            }
+        });
         System.out.println(nums);
     }
 }
