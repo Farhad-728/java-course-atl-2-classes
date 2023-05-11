@@ -1,4 +1,4 @@
-package az.atlacademy.lesson14pr1;
+package az.atlacademy.lesson14pr2;
 
 import java.util.Optional;
 import java.util.Scanner;
