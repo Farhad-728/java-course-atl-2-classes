@@ -4,24 +4,25 @@ import java.util.LinkedList;
 
 public class LinkedListApp {
     public static void main(String[] args) {
-        LinkedList<String> name = new LinkedList<>();
-        name.add("Elvin");
-        name.add("Samir");
-        name.add("Ilqar");
-        name.add("Nizami");
-        System.out.println(name);
 
-        name.addFirst("Surxay");
-        System.out.println(name);
+        LinkedList<String> names = new LinkedList<>();
+        names.add("Elvin");
+        names.add("Samir");
+        names.add("Ilqar");
+        names.add("Nizami");
+        System.out.println(names);
 
-        name.addLast("Orkhan");
-        System.out.println(name);
+        names.addFirst("Surxay");
+        System.out.println(names);
 
-        System.out.println(name.getFirst());
+        names.addLast("Orkhan");
+        System.out.println(names);
 
-        System.out.println(name.getLast());
+        System.out.println(names.getFirst());
 
-        name.clear();
-        System.out.println(name);
+        System.out.println(names.getLast());
+
+        names.clear();
+        System.out.println(names);
     }
 }
