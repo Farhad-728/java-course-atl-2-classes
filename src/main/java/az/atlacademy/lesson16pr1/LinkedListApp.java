@@ -20,5 +20,8 @@ public class LinkedListApp {
         System.out.println(name.getFirst());
 
         System.out.println(name.getLast());
+
+        name.clear();
+        System.out.println(name);
     }
 }
