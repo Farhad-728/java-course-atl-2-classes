@@ -2,10 +2,8 @@ package az.atlacademy.module01.lesson17;
 
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class StreamApp2 {
     public static void main(String[] args) {
@@ -16,11 +14,11 @@ public class StreamApp2 {
                 .collect(Collectors.toList());
         System.out.println(evenNums);
 
-        Set<Integer> nums = (Set<Integer>) evenNums
+        Set<Integer> nums = evenNums
                 .stream()
                 .filter(num -> num > 10 && num < 30)
-                .collect(Collectors.toList());
-        System.out.println(evenNums);
+                .collect(Collectors.toSet());
+        System.out.println(nums);
     }
 }
 
