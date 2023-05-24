@@ -13,6 +13,8 @@ public class ArrayListApp {
         nums.add(8.0);
         System.out.println(nums);
 
+        nums.add(Math.random() * 101);
+
         Collections.sort(nums);
         System.out.println(nums);
 
