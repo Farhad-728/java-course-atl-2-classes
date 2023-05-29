@@ -19,7 +19,7 @@ public class Person implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("Person{id=%d, name='%s'}", id, name);
+        return String.format("Person{id=%d, name='%s'}", id, name, surname);
     }
 }
 
