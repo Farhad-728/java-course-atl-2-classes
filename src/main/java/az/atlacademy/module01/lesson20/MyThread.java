@@ -7,11 +7,14 @@ public class MyThread extends Thread {
         super.start();
     }
 
+    public MyThread(String name) {
+        super(name);
+    }
+
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(new MyThread().getClass().getName());
+        for (int i = 0; i < 4; i++) {
+            System.out.println(Thread.currentThread().getName());
         }
-
     }
 }
