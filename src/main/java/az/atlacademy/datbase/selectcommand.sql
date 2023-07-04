@@ -5,6 +5,6 @@
 5. SELECT SUM(revenue) AS Totalrevenue FROM sales;
 6. SELECT SUM(quantity) AS Totalquantity FROM inventory;
 7. SELECT firstname, lastname FROM employees WHERE position = 'Manager';
-8. SELECT * FROM orders WHERE customerid = '2';
+8. SELECT * FROM orders WHERE customerid = 2;
 9. SELECT * FROM sales WHERE quantity >= 10;
 10. SELECT * FROM products WHERE price = (SELECT MAX(price) FROM products);
