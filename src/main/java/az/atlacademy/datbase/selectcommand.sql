@@ -1,4 +1,4 @@
-1. SELECT * FROM employess;
+1. SELECT * FROM employees;
 2. SELECT name,email FROM customers;
 3. SELECT * FROM orders WHERE status = 'Completed';
 4. SELECT name, price FROM products WHERE category = 'Electronics';
