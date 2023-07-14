@@ -131,3 +131,6 @@ UPDATE books SET numberofcopies = numberofcopies + 1 WHERE  id = 5;
 SELECT * FROM books WHERE NumberOfCopies < 300;
 SELECT  * FROM books WHERE Title LIKE '%_Tw%';
 SELECT  * FROM books WHERE Production_date >= '1900-01-01'::date;
+
+--Query for searching currently available books.
+SELECT Title, NumberOfCopies FROM books;
