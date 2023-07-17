@@ -7,7 +7,7 @@ public class Student {
 
     private int id;
     private String name;
-    private String pin;
+    private int age;
 
     public Student() {
     }
@@ -15,7 +15,7 @@ public class Student {
     public Student(int id, String name, String pin) {
         this.id = id;
         this.name = name;
-        this.pin = pin;
+        this.age = age;
     }
 
     public int getId() {
@@ -34,12 +34,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getPin() {
-        return pin;
+    public int getAge() {
+        return age;
     }
 
-    public void setPin(String pin) {
-        this.pin = pin;
+    public void setPin(int age) {
+        this.age = age;
     }
 
     @Override
@@ -52,12 +52,12 @@ public class Student {
         }
         Student student = (Student) o;
         return id == student.id && Objects.equals(name, student.name) &&
-                Objects.equals(pin, student.pin);
+                Objects.equals(age, student.age);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, pin);
+        return Objects.hash(id, name, age);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", pin='" + pin + '\'' +
+                ", pin='" + age + '\'' +
                 '}';
     }
 }
