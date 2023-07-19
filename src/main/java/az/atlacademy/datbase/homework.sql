@@ -7,6 +7,7 @@ CREATE TABLE Products (
     Description VARCHAR(50),
     FOREIGN KEY (ProductID) REFERENCES Categories(CategoryID)
 );
+
 INSERT INTO Products (Name, Price, Quantity, Description, productid)
 VALUES ('Notebook', 1400.00, 2, 'Lenovo', 1),
        ('TV', 700.00, 1, 'Led', 2),
@@ -36,6 +37,7 @@ CREATE TABLE Customers (
     Email VARCHAR(20) NOT NULL ,
     Phone_Number NUMERIC NOT NULL
 );
+
 ALTER TABLE Customers ALTER COLUMN Email TYPE VARCHAR(50);
 ALTER TABLE Customers ADD CONSTRAINT Email_Check CHECK (Email LIKE '%mail.com%');
 
