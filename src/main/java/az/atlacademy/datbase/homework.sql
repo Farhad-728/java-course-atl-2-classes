@@ -27,7 +27,6 @@ VALUES (1,'Electronics'),
 (3, 'Book'),
 (4, 'Book');
 
-
 --Create a table called "Customers" to store information about the store's customers:
 CREATE TABLE Customers (
     CustomerID SERIAL PRIMARY KEY,
